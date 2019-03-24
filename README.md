@@ -3,6 +3,9 @@ pylebeat
 
 Experimental lambda function to send Cloudwatch Logs to an OnPrem ELK stack.
 
+# Add custom fields
+Edit the `fields` section in pylebeat.yml to add more custom fields to your log message
+
 # Output
 Currently supported outputs are:
 - redis
