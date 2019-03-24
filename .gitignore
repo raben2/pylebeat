@@ -1,0 +1,8 @@
+.idea
+__pycache__
+dist/*
+*.pyc
+pylambda
+test
+service.py
+*.json

@@ -1,0 +1,28 @@
+pylebeat:
+  aws:
+    region: eu-central-1
+    fields:
+      _cloud: aws
+      _env: shared
+      _pg: bigdata
+      _project: lambda
+      _region: eu-central-1
+      _source: cloudwatch_logs
+      elastic-index: lambda
+    memory_size: 128MiB
+    name: cloudwatch
+    streams:
+      - /aws/
+    type: cloudwatch_logs
+output:
+  redis:
+    enabled: true
+    hosts:
+    - 127.0.0.1
+    port: 6381
+    key: logstash
+    loadbalance: true
+    max_retries: 30
+    password: xxxx
+    ssl:
+      enabled: false
